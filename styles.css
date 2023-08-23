@@ -1,0 +1,92 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+/* STYLES */
+:root {
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --navy-blue: hsl(228, 45%, 44%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container {
+  background-color: white;
+  max-width: 30ch;
+  padding: 1rem;
+  margin: 0 1.5625rem;
+  border-radius: 1rem;
+  filter: drop-shadow(0px 0px 10px hsla(0, 0%, 61%, 0.3));
+}
+
+.container__title {
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.375rem;
+}
+
+.container__body {
+  font-weight: 400;
+  color: var(--grayish-blue);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container__image {
+  border-radius: 0.75rem;
+}
+
+.attribution {
+  color: black;
+  text-align: center;
+  max-width: 30ch;
+  margin: 0 1.5625rem;
+}
+
+.attribution__link {
+  color: var(--navy-blue);
+}
